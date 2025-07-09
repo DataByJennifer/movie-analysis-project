@@ -1,19 +1,20 @@
-# 🎬 Movie Analysis Project
+# 🎬 Movie Genre Ratings Analysis
 
-This project uses a basic movie dataset to explore trends in genres, ratings, and release years.
+This project analyzes average movie ratings by genre using a dataset from my IT course.
 
 ## 📊 Tools Used:
-- Python (Pandas, Matplotlib)
-- Google Colab
-- CSV data
+- Google Colab (Python, Pandas, Matplotlib)
+- GitHub for version control
+- Dataset: `moviesBasicData.csv`
 
-## 🔍 Key Questions:
-- Which genres have the highest average ratings?
-- Has the number of movies released per year increased?
-- Are certain genres more likely to receive higher ratings?
+## 📌 Key Insight:
+> 📈 **Crime movies** had the highest average rating across all genres, while Comedy had the lowest in this dataset.
 
 ## 📁 Files:
-- `moviesBasicData.csv`: Source data
-- `analysis.ipynb`: Analysis notebook (coming soon!)
+- `movie_genre_ratings_analysis.ipynb`: Jupyter notebook with all code and visualizations
+- `moviesBasicData.csv`: Source dataset
+- `genre_rating_chart.png`: Bar chart of average ratings by genre
 
-## 🔗 More coming soon!
+## 📎 Next Steps:
+- Explore trends over time (e.g. average ratings by year)
+- Analyze number of ratings vs average rating
