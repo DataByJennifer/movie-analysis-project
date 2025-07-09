@@ -1,20 +1,33 @@
-# 🎬 Movie Genre Ratings Analysis
+# Movie Genre Ratings Analysis
 
-This project analyzes average movie ratings by genre using a dataset from my IT course.
+This project explores trends in movie ratings using a dataset from my IT course. 
+The goal was to analyze how ratings and popularity vary across genres and over time.
 
-## 📊 Tools Used:
+## Tools Used:
 - Google Colab (Python, Pandas, Matplotlib)
 - GitHub for version control
 - Dataset: `moviesBasicData.csv`
 
-## 📌 Key Insight:
-> 📈 **Crime movies** had the highest average rating across all genres, while Comedy had the lowest in this dataset.
+---
 
-## 📁 Files:
-- `movie_genre_ratings_analysis.ipynb`: Jupyter notebook with all code and visualizations
-- `moviesBasicData.csv`: Source dataset
-- `genre_rating_chart.png`: Bar chart of average ratings by genre
+## Key Analyses & Insights
 
-## 📎 Next Steps:
-- Explore trends over time (e.g. average ratings by year)
-- Analyze number of ratings vs average rating
+### 1. ⭐ Average Rating by Genre
+> **Crime movies** had the highest average ratings among all genres, followed closely by Action, Adventure, and Animation.  
+> **Comedy** and **Romance** genres had the lowest average ratings in this dataset.
+
+![Genre Ratings Bar Chart](genre_rating_chart.png)
+
+---
+
+### 2. Movies Released Per Year
+> The number of movies released per year shows fluctuations, with some notable increases in recent decades. This might reflect growth in the film industry or broader distribution.
+
+```python
+# Code run for this:
+movies_per_year = df['year'].value_counts().sort_index()
+
+Next Steps:
+Analyze trends in director-specific ratings
+Explore correlation between rating volume and average score
+Compare genre performance over time
